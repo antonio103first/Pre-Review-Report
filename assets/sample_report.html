@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+  @font-face {
+    font-family: 'MalgunGothic';
+    src: url('fonts/MALGUN.TTF') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'MalgunGothic';
+    src: url('fonts/MALGUNBD.TTF') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'MalgunGothic';
+    src: url('fonts/MALGUNSL.TTF') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'MalgunGothic', '맑은 고딕', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #222;
+    padding: 20mm 18mm;
+    max-width: 210mm;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 6px;
+    color: #1a3a5c;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a3a5c;
+    border-bottom: 2px solid #1a3a5c;
+    padding-bottom: 4px;
+    margin: 22px 0 10px;
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2c5282;
+    margin: 14px 0 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-bottom: 10px;
+    table-layout: fixed;
+  }
+  .table-auto { table-layout: auto; }
+  thead tr {
+    background-color: #1a3a5c;
+    color: #fff;
+  }
+  thead th {
+    padding: 7px 10px;
+    text-align: left;
+    font-weight: 700;
+    white-space: normal;
+    word-break: keep-all;
+  }
+  tbody tr:nth-child(odd)  { background-color: #ffffff; }
+  tbody tr:nth-child(even) { background-color: #f5f8fc; }
+  tbody td {
+    padding: 7px 10px;
+    border: 1px solid #d0d7e3;
+    vertical-align: top;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  .center { text-align: center; }
+  .right  { text-align: right; }
+  .nowrap { white-space: nowrap; }
+  .warn {
+    background: #fff8e1;
+    border-left: 3px solid #f0c000;
+    padding: 6px 10px;
+    margin: 6px 0 10px;
+    font-size: 11px;
+    color: #7a5f00;
+  }
+  .red    { color: #c0392b; font-weight: 700; }
+  .orange { color: #e67e22; font-weight: 700; }
+  .green  { color: #27ae60; font-weight: 700; }
+  .desc {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  pre {
+    background: #f4f6f9;
+    border: 1px solid #d0d7e3;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    white-space: pre;
+    overflow-x: auto;
+  }
+  .overview-table td:first-child { font-weight: 700; width: 140px; white-space: nowrap; }
+  .col-label   { width: 120px; }
+  .col-importance { width: 70px; }
+  .col-status  { width: 60px; }
+  .col-charge  { width: 70px; }
+  .col-num     { width: 28px; text-align: center; }
+  .source-note {
+    font-size: 10px;
+    color: #555;
+    margin: -6px 0 10px;
+    padding-left: 4px;
+  }
+  footer {
+    margin-top: 30px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    font-size: 10px;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+  }
+  .badge-ok {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+    border-radius: 3px;
+    padding: 1px 7px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<h1>예비 심사 보고서</h1>
+<div class="subtitle">Pre-screening Report · K-Run Ventures</div>
+
+<table class="overview-table">
+  <tbody>
+    <tr><td>보고서 작성일</td><td>2026년 2월 19일</td></tr>
+    <tr><td>담당자</td><td></td></tr>
+    <tr><td>펀드명</td><td>케이런7호</td></tr>
+    <tr><td>심사 단계</td><td>예비심사 (1차)</td></tr>
+    <tr><td>검토 의견</td><td><span class="badge-ok">✅ 본 심사 진행 권고</span></td></tr>
+  </tbody>
+</table>
+
+<h2>1. 기업 개요</h2>
+<table class="overview-table">
+  <tbody>
+    <tr><td>기업명</td><td>(주)모빌테크</td></tr>
+    <tr><td>설립일</td><td>2021년 3월</td></tr>
+    <tr><td>업종</td><td>모빌리티 / 자율주행 소프트웨어</td></tr>
+    <tr><td>대표자</td><td>김철수</td></tr>
+    <tr><td>소재지</td><td>부산광역시 해운대구</td></tr>
+    <tr><td>홈페이지</td><td>www.mobiltech.kr</td></tr>
+    <tr><td>주요 제품·서비스</td><td>항만 내 자율주행 물류 솔루션</td></tr>
+    <tr><td>기술 단계</td><td>TRL 6 (실증 완료)</td></tr>
+    <tr><td>투자 유치 이력</td><td>시드 5억 (2022), Pre-A 20억 (2024)</td></tr>
+  </tbody>
+</table>
+
+<!-- 주주명부: 주주명 컬럼 확대, 나머지 컬럼 균형 조정 -->
+<h3>주주명부</h3>
+<table>
+  <colgroup>
+    <col style="width:28px">   <!-- # -->
+    <col style="width:22%">    <!-- 주주명 (확대) -->
+    <col style="width:16%">    <!-- 구분 -->
+    <col style="width:16%">    <!-- 주식 수 -->
+    <col style="width:12%">    <!-- 지분율 -->
+    <col>                      <!-- 비고 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>주주명</th>
+      <th>구분</th>
+      <th class="right">주식 수</th>
+      <th class="center">지분율</th>
+      <th>비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="center">1</td><td>김철수</td><td>창업자</td><td class="right nowrap">300,000</td><td class="center">40.0%</td><td>대표이사</td></tr>
+    <tr><td class="center">2</td><td>이영희</td><td>창업자</td><td class="right nowrap">200,000</td><td class="center">26.7%</td><td>CTO</td></tr>
+    <tr><td class="center">3</td><td>박민준</td><td>창업자</td><td class="right nowrap">100,000</td><td class="center">13.3%</td><td>COO</td></tr>
+    <tr><td class="center">4</td><td>한국벤처투자</td><td>재무적 투자자</td><td class="right nowrap">80,000</td><td class="center">10.7%</td><td>Pre-A 참여</td></tr>
+    <tr><td class="center">5</td><td>부산창조경제혁신센터</td><td>재무적 투자자</td><td class="right nowrap">40,000</td><td class="center">5.3%</td><td>시드 참여</td></tr>
+    <tr><td class="center">6</td><td>스톡옵션 풀</td><td>임직원</td><td class="right nowrap">30,000</td><td class="center">4.0%</td><td>미행사</td></tr>
+    <tr><td>—</td><td><strong>합계</strong></td><td></td><td class="right nowrap"><strong>750,000</strong></td><td class="center"><strong>100%</strong></td><td></td></tr>
+  </tbody>
+</table>
+
+<!-- 핵심인력: 구분·성명·역할 축소, 주요경력 확대 + 줄바꿈 -->
+<h2>2. 핵심인력</h2>
+<table>
+  <colgroup>
+    <col style="width:12%">   <!-- 구분 -->
+    <col style="width:10%">   <!-- 성명 -->
+    <col style="width:10%">   <!-- 역할 -->
+    <col>                     <!-- 주요 경력 (나머지 전부) -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>성명</th>
+      <th>역할</th>
+      <th>주요 경력</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>대표이사</td><td>김철수</td><td>CEO</td><td>현대차 자율주행팀 10년, KAIST 기계공학 박사</td></tr>
+    <tr><td>공동창업자</td><td>이영희</td><td>CTO</td><td>삼성리서치 AI연구소 7년, POSTECH 컴퓨터공학 석사</td></tr>
+    <tr><td>공동창업자</td><td>박민준</td><td>COO</td><td>스타트업 2회 창업 및 엑싯 경험, 연세대 경영학</td></tr>
+    <tr><td>핵심인력</td><td>정수연</td><td>개발팀장</td><td>자율주행 SW 개발 5년</td></tr>
+    <tr><td>핵심인력</td><td>최재원</td><td>영업총괄</td><td>물류·항만 업계 영업 8년</td></tr>
+  </tbody>
+</table>
+
+<!-- 사업내용 주요제품: 제품명·유형 축소, 설명·주요고객군 동일 크기로 확대 + 줄바꿈 -->
+<h2>3. 사업 내용</h2>
+<h3>주요 제품</h3>
+<table>
+  <colgroup>
+    <col style="width:18%">   <!-- 제품명 -->
+    <col style="width:13%">   <!-- 유형 -->
+    <col style="width:34.5%"> <!-- 설명 -->
+    <col style="width:34.5%"> <!-- 주요 고객군 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>제품명</th>
+      <th>유형</th>
+      <th>설명</th>
+      <th>주요 고객군</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AutoPort Pilot</td>
+      <td>소프트웨어</td>
+      <td>항만 내 무인 이송장비(AGV) 자율주행 제어 시스템</td>
+      <td>항만공사, 터미널 운영사</td>
+    </tr>
+    <tr>
+      <td>AutoPort Vision</td>
+      <td>하드웨어+SW</td>
+      <td>비전·LiDAR 융합 센서 모듈 (기존 장비 retrofit 가능)</td>
+      <td>물류 장비 제조사</td>
+    </tr>
+    <tr>
+      <td>AutoPort Cloud</td>
+      <td>SaaS</td>
+      <td>항만 운영 데이터 분석 및 실시간 모니터링 플랫폼</td>
+      <td>항만공사, 스마트항만 사업자</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 주요 기술: 내용 컬럼 줄바꿈 처리 -->
+<h3>주요 기술</h3>
+<p class="desc">모빌테크의 핵심 기술은 비전 카메라와 LiDAR 센서를 실시간으로 융합하는 멀티모달 인식 엔진을 중심으로 구성된다. 이를 기반으로 항만 환경에 특화된 경로 계획 알고리즘과 엣지 디바이스 내 온디바이스 AI 추론이 결합되어, 클라우드 연결 없이도 자율주행이 가능한 구조를 갖춘다. 현재 핵심 기술 2종은 TRL 6(실증 완료) 수준이며, 디지털 트윈 연동 기술은 TRL 4 단계로 개발 중이다.</p>
+<pre>
+[ 기술 구조도 ]
+
+  ┌─────────────────────────────────────────┐
+  │            센서 입력 레이어              │
+  │   📷 비전 카메라  +  📡 LiDAR 센서      │
+  └──────────────┬──────────────────────────┘
+                 │ 실시간 데이터 융합
+  ┌──────────────▼──────────────────────────┐
+  │         멀티모달 인식 엔진 (TRL 6)       │
+  │  객체 탐지 · 거리 측정 · 환경 맵핑      │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │   항만 특화 경로 계획 알고리즘 (TRL 6)   │
+  │  컨테이너 야드 최적 경로 · 충돌 회피     │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │      엣지 AI 추론 엔진 (TRL 5)           │
+  │  온디바이스 실시간 판단 · 클라우드 불필요 │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │     디지털 트윈 연동 모듈 (TRL 4)        │
+  │  항만 운영 시뮬레이션 · 예측 최적화      │
+  └─────────────────────────────────────────┘
+</pre>
+<table>
+  <colgroup>
+    <col style="width:22%">   <!-- 기술명 -->
+    <col>                     <!-- 내용 (줄바꿈) -->
+    <col style="width:12%">   <!-- 기술 수준 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>기술명</th>
+      <th>내용</th>
+      <th class="center">기술 수준</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>비전+LiDAR 융합 인식</td><td>다중 센서 데이터 실시간 융합으로 객체 인식 정확도 향상</td><td class="center">TRL 6</td></tr>
+    <tr><td>항만 특화 경로 계획</td><td>컨테이너 야드 환경 최적화 자율 경로 생성 알고리즘</td><td class="center">TRL 6</td></tr>
+    <tr><td>엣지 AI 추론 엔진</td><td>클라우드 의존 없이 온디바이스 실시간 판단 처리</td><td class="center">TRL 5</td></tr>
+    <tr><td>디지털 트윈 연동</td><td>항만 운영 시뮬레이션 및 예측 최적화</td><td class="center">TRL 4</td></tr>
+  </tbody>
+</table>
+
+<h3>기술의 차별점</h3>
+<table>
+  <thead><tr><th>항목</th><th>모빌테크</th><th>기존 솔루션</th></tr></thead>
+  <tbody>
+    <tr><td>환경 대응</td><td>악천후(안개·야간) 정상 운영 가능</td><td>날씨 영향으로 운영 제한</td></tr>
+    <tr><td>설치 방식</td><td>기존 장비 retrofit, 별도 인프라 불필요</td><td>신규 인프라 구축 필요</td></tr>
+    <tr><td>도입 비용</td><td>기존 대비 약 40% 절감</td><td>고비용 구조</td></tr>
+    <tr><td>항만 특화</td><td>항만 환경 전용 알고리즘</td><td>범용 자율주행 기술 적용</td></tr>
+    <tr><td>IP 보유</td><td>특허 7건 (등록 3, 출원 4)</td><td>자체 IP 제한적</td></tr>
+  </tbody>
+</table>
+
+<!-- 시장 규모: 구분 컬럼 크게, 출처 컬럼 크게, 줄바꿈 -->
+<h2>4. 시장 분석 및 경쟁사</h2>
+<h3>시장 규모</h3>
+<table>
+  <colgroup>
+    <col style="width:28%">   <!-- 구분 (확대) -->
+    <col style="width:13%">   <!-- 2024년 -->
+    <col style="width:16%">   <!-- 2027년 전망 -->
+    <col style="width:13%">   <!-- 연평균 성장률 -->
+    <col style="width:30%">   <!-- 출처 (확대) -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th class="right">2024년</th>
+      <th class="right">2027년 (전망)</th>
+      <th class="center">연평균 성장률</th>
+      <th>출처</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>글로벌 항만 자율화 시장</td>
+      <td class="right nowrap">$4.2B</td>
+      <td class="right nowrap">$9.8B</td>
+      <td class="center">32.7%</td>
+      <td>[MarketsandMarkets, 2024]</td>
+    </tr>
+    <tr>
+      <td>국내 스마트항만 시장</td>
+      <td class="right nowrap">약 8,000억 원</td>
+      <td class="right nowrap">약 1.8조 원</td>
+      <td class="center">31.2%</td>
+      <td>[해양수산부, 2023]</td>
+    </tr>
+    <tr>
+      <td>국내 타겟 시장 (SOM)</td>
+      <td class="right">—</td>
+      <td class="right nowrap">약 2,400억 원</td>
+      <td class="center">—</td>
+      <td>[내부 추정]</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>경쟁사 분석</h3>
+<table>
+  <thead><tr><th>구분</th><th class="center">모빌테크</th><th class="center">경쟁사 A (터미널AI)</th><th class="center">경쟁사 B (오토로지스)</th></tr></thead>
+  <tbody>
+    <tr><td>설립연도</td><td class="center">2021</td><td class="center">2019</td><td class="center">2020</td></tr>
+    <tr><td>핵심기술</td><td class="center">비전+LiDAR 융합</td><td class="center">LiDAR 단독</td><td class="center">GPS 기반</td></tr>
+    <tr><td>항만 특화</td><td class="center">✅</td><td class="center">❌</td><td class="center">✅</td></tr>
+    <tr><td>레퍼런스</td><td class="center">부산항 실증</td><td class="center">인천항 파일럿</td><td class="center">여수항 파일럿</td></tr>
+    <tr><td>투자 유치액</td><td class="center">25억</td><td class="center">80억</td><td class="center">45억</td></tr>
+    <tr><td>차별점</td><td class="center">비용 40% 절감, 항만 특화 IP</td><td class="center">선발 주자, 네트워크</td><td class="center">해외 진출 중</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] 경쟁사 투자 유치 정보: 각사 공시 및 벤처스퀘어 DB (2024.12 기준) / 기술 스펙: 회사 제공 IR자료 및 특허 공개 정보 [키프리스, 2025.01]</p>
+
+<!-- 경쟁 우위 요약: 항목 컬럼 축소, 내용 컬럼 확대 + 줄바꿈 -->
+<h3>경쟁 우위 요약</h3>
+<table>
+  <colgroup>
+    <col style="width:18%">   <!-- 항목 (축소) -->
+    <col>                     <!-- 내용 (확대) -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>항목</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>핵심 차별점</td><td>비전+LiDAR 융합 기술로 악천후 환경 대응, 기존 대비 설치비 40% 절감</td></tr>
+    <tr><td>진입장벽</td><td>항만공사 실증 레퍼런스, 특허 7건 (출원 포함)</td></tr>
+    <tr><td>리스크</td><td>글로벌 대형 플레이어(TuSimple, 현대 글로비스) 국내 진출 가능성</td></tr>
+  </tbody>
+</table>
+
+<!-- 주요 고객: 고객사명·주요계약내용 확대, 줄바꿈 -->
+<h2>5. 영업 현황</h2>
+<h3>주요 고객</h3>
+<table>
+  <colgroup>
+    <col style="width:28px">  <!-- # -->
+    <col style="width:22%">   <!-- 고객사명 (확대) -->
+    <col style="width:12%">   <!-- 유형 -->
+    <col style="width:12%">   <!-- 계약 상태 -->
+    <col>                     <!-- 주요 계약 내용 (확대) -->
+    <col style="width:12%">   <!-- 연간 규모 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>고객사명</th>
+      <th>유형</th>
+      <th class="center">계약 상태</th>
+      <th>주요 계약 내용</th>
+      <th class="center">연간 규모</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="center">1</td>
+      <td>부산항만공사</td>
+      <td>공공기관</td>
+      <td class="center">계약 완료</td>
+      <td>AutoPort Pilot 실증·운영 계약</td>
+      <td class="center nowrap">4억 원</td>
+    </tr>
+    <tr>
+      <td class="center">2</td>
+      <td>한진부산컨테이너터미널</td>
+      <td>민간 터미널</td>
+      <td class="center">파일럿 중</td>
+      <td>AutoPort Vision 센서 모듈 공급</td>
+      <td class="center">협의 중</td>
+    </tr>
+    <tr>
+      <td class="center">3</td>
+      <td>현대글로비스</td>
+      <td>대기업</td>
+      <td class="center">LOI 체결</td>
+      <td>스마트물류센터 자율주행 도입 검토</td>
+      <td class="center">미정</td>
+    </tr>
+    <tr>
+      <td class="center">4</td>
+      <td>광양항만공사</td>
+      <td>공공기관</td>
+      <td class="center">제안 단계</td>
+      <td>AutoPort Pilot 도입 제안 진행 중</td>
+      <td class="center">미정</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 수주 현황: 내용 컬럼 확대 + 줄바꿈, 나머지 컬럼 글자크기에 맞춤 -->
+<h3>수주 현황 및 계획</h3>
+<table>
+  <colgroup>
+    <col style="width:14%">   <!-- 구분 -->
+    <col>                     <!-- 내용 (확대) -->
+    <col style="width:16%">   <!-- 금액 -->
+    <col style="width:14%">   <!-- 시기 -->
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>내용</th>
+      <th class="right">금액</th>
+      <th class="center">시기</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>수주 확정</td><td>부산항만공사 운영 계약 (1차)</td><td class="right nowrap">4억 원</td><td class="center nowrap">2024년 Q4</td></tr>
+    <tr><td>수주 확정</td><td>한진BCTC 센서 모듈 납품</td><td class="right nowrap">2억 원</td><td class="center nowrap">2025년 Q1</td></tr>
+    <tr><td>수주 협의 중</td><td>현대글로비스 파일럿 프로젝트</td><td class="right nowrap">8억 원 (예상)</td><td class="center nowrap">2025년 Q2</td></tr>
+    <tr><td>수주 목표</td><td>광양항만공사 신규 계약</td><td class="right nowrap">5억 원 (예상)</td><td class="center nowrap">2025년 Q3</td></tr>
+    <tr><td>수주 목표</td><td>인천항 민간 터미널 2개사</td><td class="right nowrap">10억 원 (예상)</td><td class="center nowrap">2025년 Q4</td></tr>
+    <tr><td>—</td><td><strong>2025년 수주 목표 합계</strong></td><td class="right nowrap"><strong>29억 원</strong></td><td class="center">—</td></tr>
+  </tbody>
+</table>
+<div class="warn">⚠️ 검토 필요: 현대글로비스 LOI의 구속력 및 전환 가능성, 광양항 제안 진행 단계 확인 필요</div>
+
+<h2>6. 재무 현황 및 전망</h2>
+<h3>재무 현황 (실적)</h3>
+<table>
+  <thead><tr><th class="col-label">구분</th><th class="right">2022년</th><th class="right">2023년</th><th class="right">2024년</th></tr></thead>
+  <tbody>
+    <tr><td>매출액</td><td class="right">—</td><td class="right nowrap">2억 원</td><td class="right nowrap">12억 원</td></tr>
+    <tr><td>영업손실</td><td class="right nowrap">△8억 원</td><td class="right nowrap">△15억 원</td><td class="right nowrap">△18억 원</td></tr>
+    <tr><td>현금 보유</td><td class="right nowrap">4억 원</td><td class="right nowrap">12억 원</td><td class="right nowrap">9억 원</td></tr>
+    <tr><td>직원 수</td><td class="right">8명</td><td class="right">15명</td><td class="right">23명</td></tr>
+  </tbody>
+</table>
+
+<h3>재무 전망 (계획)</h3>
+<table>
+  <thead><tr><th class="col-label">구분</th><th class="right">2025년 (E)</th><th class="right">2026년 (E)</th><th class="right">2027년 (E)</th></tr></thead>
+  <tbody>
+    <tr><td>매출액</td><td class="right nowrap">35억 원</td><td class="right nowrap">90억 원</td><td class="right nowrap">200억 원</td></tr>
+    <tr><td>영업이익</td><td class="right nowrap">△10억 원</td><td class="right nowrap">5억 원</td><td class="right nowrap">38억 원</td></tr>
+    <tr><td>BEP 달성</td><td class="right">—</td><td class="right">2026년 Q2 예상</td><td class="right">—</td></tr>
+    <tr><td>주요 가정</td><td class="right">부산항 계약 체결</td><td class="right">광양·인천항 확장</td><td class="right">해외 1개국 진출</td></tr>
+  </tbody>
+</table>
+<div class="warn">⚠️ 검토 필요: 2025년 매출 35억 달성을 위한 수주 파이프라인 구체성 확인 필요</div>
+
+<h2>7. 투자 조건 및 밸류에이션</h2>
+<table class="overview-table">
+  <tbody>
+    <tr><td>투자 라운드</td><td>Series A</td></tr>
+    <tr><td>총 라운드 규모</td><td>60억 원</td></tr>
+    <tr><td>K-Run Ventures 검토 금액</td><td>15억 원 (25% 참여)</td></tr>
+    <tr><td>Pre-money Valuation</td><td>180억 원</td></tr>
+    <tr><td>Post-money Valuation</td><td>240억 원</td></tr>
+    <tr><td>투자 방식</td><td>보통주 + RCPS 혼합</td></tr>
+    <tr><td>예상 지분율</td><td>6.25%</td></tr>
+    <tr><td>리드 투자사</td><td>(주)한국벤처투자 (30억 검토 중)</td></tr>
+  </tbody>
+</table>
+
+<h3>밸류에이션 검토</h3>
+<table>
+  <thead><tr><th>방법론</th><th class="center">산출 Valuation</th><th>비고</th></tr></thead>
+  <tbody>
+    <tr><td>매출 배수 (2025E × 10x)</td><td class="center nowrap">350억 원</td><td>고성장 SaaS 기준</td></tr>
+    <tr><td>매출 배수 (2025E × 5x)</td><td class="center nowrap">175억 원</td><td>보수적 적용</td></tr>
+    <tr><td>유사 거래 비교</td><td class="center nowrap">150~250억 원</td><td>국내 모빌리티 Pre-A 이후 평균</td></tr>
+    <tr><td><strong>요청 Valuation</strong></td><td class="center nowrap"><strong>180억 원</strong></td><td><strong>적정 범위 내 판단</strong></td></tr>
+  </tbody>
+</table>
+
+<h3>자금사용계획</h3>
+<table>
+  <thead><tr><th>구분</th><th>사용 항목</th><th class="right">금액</th><th class="center">비중</th><th>비고</th></tr></thead>
+  <tbody>
+    <tr><td>R&amp;D</td><td>엣지 AI 추론 엔진 고도화</td><td class="right nowrap">20억 원</td><td class="center">33%</td><td>핵심 기술 TRL 향상</td></tr>
+    <tr><td>인력</td><td>개발·영업 인력 채용 (10명)</td><td class="right nowrap">15억 원</td><td class="center">25%</td><td>2025~2026년 순차 채용</td></tr>
+    <tr><td>영업·마케팅</td><td>신규 항만 레퍼런스 확보</td><td class="right nowrap">12억 원</td><td class="center">20%</td><td>광양·인천항 공략</td></tr>
+    <tr><td>인프라</td><td>클라우드 인프라 및 장비</td><td class="right nowrap">8억 원</td><td class="center">13%</td><td>AutoPort Cloud 확장</td></tr>
+    <tr><td>운영</td><td>운전자본 및 일반관리비</td><td class="right nowrap">5억 원</td><td class="center">9%</td><td>12개월 운영 여유분</td></tr>
+    <tr><td>—</td><td><strong>합계</strong></td><td class="right nowrap"><strong>60억 원</strong></td><td class="center"><strong>100%</strong></td><td></td></tr>
+  </tbody>
+</table>
+<div class="warn">⚠️ 검토 필요: R&D 집행 일정 및 마일스톤 연계 여부 확인 필요</div>
+
+<h2>8. 질의 확인 필요사항 (DD Checklist)</h2>
+<table>
+  <colgroup>
+    <col style="width:28px">
+    <col>
+    <col style="width:70px">
+    <col style="width:60px">
+    <col style="width:70px">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>확인 항목</th>
+      <th class="center">중요도</th>
+      <th>현황</th>
+      <th>담당</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>부산항 MOU/계약 원문 검토</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td>2</td><td>특허 7건 등록 현황 및 핵심 특허 범위</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>법무 검토</td></tr>
+    <tr><td>3</td><td>2025년 수주 파이프라인 현황 (LOI 포함)</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td>4</td><td>최근 3개년 재무제표 (감사보고서)</td><td class="center"><span class="red">🔴 필수</span></td><td>요청 예정</td><td>회계 검토</td></tr>
+    <tr><td>5</td><td>공동창업자 지분 구조 및 주주간 계약서</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>법무 검토</td></tr>
+    <tr><td>6</td><td>자금사용계획 세부 집행 일정 및 마일스톤</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td>7</td><td>핵심 기술인력 스톡옵션 부여 현황</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td>8</td><td>경쟁사 대비 기술 차별성 제3자 검증 여부</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>기술 자문</td></tr>
+    <tr><td>9</td><td>현대글로비스 LOI 구속력 및 전환 가능성</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td>10</td><td>리드 투자사 확정 여부 및 조건 협의 현황</td><td class="center"><span class="orange">🟡 중요</span></td><td>협의 중</td><td>심사역</td></tr>
+    <tr><td>11</td><td>정부 지원사업 수혜 현황 및 의무 조건</td><td class="center"><span class="green">🟢 참고</span></td><td>미확인</td><td>심사역</td></tr>
+  </tbody>
+</table>
+
+<h2>9. 종합 의견</h2>
+<table>
+  <thead><tr><th class="col-label">항목</th><th class="center">평점</th><th>세부 의견</th></tr></thead>
+  <tbody>
+    <tr><td>팀 역량</td><td class="center nowrap">⭐⭐⭐⭐⭐</td><td>기술·사업화 균형 우수</td></tr>
+    <tr><td>시장 매력도</td><td class="center nowrap">⭐⭐⭐⭐⭐</td><td>고성장 블루오션</td></tr>
+    <tr><td>기술 경쟁력</td><td class="center nowrap">⭐⭐⭐⭐</td><td>실증 완료, IP 보완 필요</td></tr>
+    <tr><td>영업 현황</td><td class="center nowrap">⭐⭐⭐</td><td>레퍼런스 확보 중, 대형 계약 전환 여부 관건</td></tr>
+    <tr><td>재무 계획</td><td class="center nowrap">⭐⭐⭐</td><td>공격적 목표, 파이프라인 검증 필요</td></tr>
+    <tr><td>밸류에이션</td><td class="center nowrap">⭐⭐⭐⭐</td><td>적정 수준, 협상 여지 있음</td></tr>
+    <tr><td><strong>종합</strong></td><td class="center nowrap"><strong>⭐⭐⭐⭐</strong></td><td><strong>본 심사 진행 권고</strong></td></tr>
+  </tbody>
+</table>
+
+<p class="desc" style="margin-top:10px;">항만 자율화 시장의 높은 성장성과 팀의 도메인 전문성을 감안할 때 본 심사 진행이 적절하다고 판단됨. 부산항 계약 구체성 및 현대글로비스 LOI 전환 가능성 검증이 선행되어야 하며, 자금사용계획의 마일스톤 연계 여부 및 특허 유효성 법무 검토 후 최종 투자 여부를 결정할 것을 권고함.</p>
+
+<footer>
+  <span>K-Run Ventures | 케이런7호 | 내부 검토용 기밀 문서</span>
+  <span>작성일: 2026.02.19</span>
+</footer>
+
+</body>
+</html>
