@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>예비심사보고서 — (주)바이오넷</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'MalgunGothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #222;
+    padding: 20mm 18mm;
+    max-width: 210mm;
+    margin: 0 auto;
+  }
+  h1 { font-size: 18px; font-weight: 700; text-align: center; margin-bottom: 6px; color: #1a3a5c; }
+  .subtitle { text-align: center; font-size: 11px; color: #666; margin-bottom: 20px; }
+  h2 { font-size: 13px; font-weight: 700; color: #1a3a5c; border-bottom: 2px solid #1a3a5c; padding-bottom: 4px; margin: 22px 0 10px; }
+  h3 { font-size: 12px; font-weight: 700; color: #2c5282; margin: 14px 0 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-bottom: 10px; table-layout: fixed; }
+  thead tr { background-color: #1a3a5c; color: #fff; }
+  thead th { padding: 7px 10px; text-align: left; font-weight: 700; white-space: normal; word-break: keep-all; }
+  tbody tr:nth-child(odd)  { background-color: #ffffff; }
+  tbody tr:nth-child(even) { background-color: #f5f8fc; }
+  tbody td { padding: 7px 10px; border: 1px solid #d0d7e3; vertical-align: top; white-space: normal; word-break: keep-all; overflow-wrap: break-word; }
+  .center { text-align: center; }
+  .right  { text-align: right; }
+  .nowrap { white-space: nowrap; }
+  .warn { background: #fff8e1; border-left: 3px solid #f0c000; padding: 6px 10px; margin: 6px 0 10px; font-size: 11px; color: #7a5f00; }
+  .red    { color: #c0392b; font-weight: 700; }
+  .orange { color: #e67e22; font-weight: 700; }
+  .green  { color: #27ae60; font-weight: 700; }
+  .desc { font-size: 11px; line-height: 1.6; margin-bottom: 8px; color: #333; }
+  pre { background: #f4f6f9; border: 1px solid #d0d7e3; border-radius: 4px; padding: 10px 14px; font-family: 'Courier New', monospace; font-size: 10px; line-height: 1.6; margin-bottom: 10px; white-space: pre; overflow-x: auto; }
+  .overview-table td:first-child { font-weight: 700; width: 140px; white-space: nowrap; }
+  .col-label   { width: 120px; }
+  .col-num     { width: 28px; text-align: center; }
+  .source-note { font-size: 10px; color: #555; margin: -6px 0 10px; padding-left: 4px; }
+  .badge-ok { display: inline-block; background: #e8f5e9; color: #27ae60; border: 1px solid #27ae60; border-radius: 3px; padding: 1px 7px; font-size: 10px; font-weight: 700; }
+  .badge-hold { display: inline-block; background: #fff3e0; color: #e67e22; border: 1px solid #e67e22; border-radius: 3px; padding: 1px 7px; font-size: 10px; font-weight: 700; }
+  footer { margin-top: 30px; padding-top: 8px; border-top: 1px solid #ccc; font-size: 10px; color: #888; display: flex; justify-content: space-between; }
+</style>
+</head>
+<body>
+
+<h1>예비 심사 보고서</h1>
+<div class="subtitle">Pre-screening Report · K-Run Ventures</div>
+
+<table class="overview-table">
+  <tbody>
+    <tr><td>보고서 작성일</td><td>2026년 5월 13일</td></tr>
+    <tr><td>담당자</td><td></td></tr>
+    <tr><td>펀드명</td><td>케이런7호</td></tr>
+    <tr><td>심사 단계</td><td>예비심사 (1차)</td></tr>
+    <tr><td>검토 의견</td><td><span class="badge-hold">⚠️ 본 심사 진행 권고 (조건부 — IR자료 보강 선행)</span></td></tr>
+  </tbody>
+</table>
+
+<div class="warn">
+  ⚠️ 본 보고서는 첨부 IR자료(제27기 사업보고서 표지 1매)와 공시·공개 자료(DART·혁신의숲·사람인·자사 홈페이지·언론 보도) 기반으로 작성되었습니다.
+  IR Deck 등 상세 IR자료가 미수령 상태이므로, 기업 개요·재무 현황·시장 분석을 제외한 다수 항목은 <strong>"확인 필요"</strong>로 표기되었습니다.
+  본 심사 진입 전 IR자료 정식 수령 및 보강이 선행되어야 합니다.
+</div>
+
+<h2>1. 기업 개요</h2>
+<table class="overview-table">
+  <tbody>
+    <tr><td>기업명</td><td>주식회사 바이오넷 (Bionet Co., Ltd.)</td></tr>
+    <tr><td>설립일</td><td>1999년 10월 5일 (제27기 사업연도, 2025.01.01~12.31)</td></tr>
+    <tr><td>업종</td><td>전기식 진단 및 요법 기기 제조업 (의료기기)</td></tr>
+    <tr><td>대표자</td><td>민스티븐상원 (Steven Min)</td></tr>
+    <tr><td>소재지</td><td>서울특별시 구로구 디지털로31길 61, 5층 (구로동, 드림마크원데이터센타)</td></tr>
+    <tr><td>연락처</td><td>02-6292-6410 / 작성책임자: 이사 이영수 (070-7585-6475)</td></tr>
+    <tr><td>홈페이지</td><td>http://www.ebionet.com</td></tr>
+    <tr><td>주요 제품·서비스</td><td>환자감시장치(BM 시리즈), 심전도기(ECG), 태아감시장치, 무선 초음파, 동물용 의료기기(Vet 시리즈)</td></tr>
+    <tr><td>해외 수출</td><td>전 세계 약 85개국 [출처: 혁신의숲 InnoForest, 2026 / MEDICA 2024 보도자료]</td></tr>
+    <tr><td>임직원 수</td><td>79명 [출처: 사람인 기업정보, 2026]</td></tr>
+    <tr><td>상장 여부</td><td>비상장 (장외거래 종목코드 074320)</td></tr>
+    <tr><td>제출 공시</td><td>제27기 사업보고서 (2026.03.31, 금융위/한국거래소)</td></tr>
+    <tr><td>투자 유치 이력</td><td>확인 필요 (혁신의숲 비공개 항목)</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] 첨부 IR자료(제27기 사업보고서 표지), DART 공시, InnoForest 기업프로필, 사람인 기업정보 2026, Bionet 공식 홈페이지</p>
+
+<h3>주주명부</h3>
+<table>
+  <colgroup>
+    <col style="width:28px">
+    <col style="width:22%">
+    <col style="width:16%">
+    <col style="width:16%">
+    <col style="width:12%">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>주주명</th>
+      <th>구분</th>
+      <th class="right">주식 수</th>
+      <th class="center">지분율</th>
+      <th>비고</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="center">—</td><td colspan="5">확인 필요 — IR자료 미수령 (DART 공시 상세 재무·주주현황 표는 표지 외 본문 페이지 별도 확인 요)</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[참고] 사업보고서 본문 "주주에 관한 사항" 섹션 확보 시 갱신 필요. 비상장이지만 증권 모집·매출법인으로 DART 의무공시 대상.</p>
+
+<h2>2. 핵심인력</h2>
+<table>
+  <colgroup>
+    <col style="width:12%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>성명</th>
+      <th>역할</th>
+      <th>주요 경력</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>대표이사</td><td>민스티븐상원<br>(Steven Min)</td><td>CEO</td><td>미국 시민권자, 의료기기 사업 총괄. 1999년 바이오넷 창립 멤버 [출처: 사람인·혁신의숲]. 상세 경력 확인 필요.</td></tr>
+    <tr><td>이사</td><td>이영수</td><td>사업보고서 작성책임자</td><td>제27기 사업보고서 작성책임 이사 [출처: 사업보고서 표지]. 담당 직무 확인 필요.</td></tr>
+    <tr><td>CTO·CFO·임원진</td><td colspan="2">확인 필요</td><td>임원 구성, 핵심 기술·재무 책임자 정보 IR자료 보강 필요</td></tr>
+  </tbody>
+</table>
+
+<h2>3. 사업 내용</h2>
+<h3>주요 제품</h3>
+<table>
+  <colgroup>
+    <col style="width:18%">
+    <col style="width:13%">
+    <col style="width:34.5%">
+    <col style="width:34.5%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>제품명</th>
+      <th>유형</th>
+      <th>설명</th>
+      <th>주요 고객군</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BM 시리즈 (BM3 / BM5 / BM7)</td>
+      <td>인체용 의료기기</td>
+      <td>다중 파라미터 환자감시장치(Patient Monitor). 7~12.1" 터치스크린, ECG·SpO₂·NIBP·Respiration·EtCO₂·Temperature·IBP 측정. 중앙환자감시(BM Central) 연동.</td>
+      <td>대학병원, 종합병원, 응급실, ICU, 수술실</td>
+    </tr>
+    <tr>
+      <td>Cardio 시리즈 (ECG 심전도기)</td>
+      <td>인체용 의료기기</td>
+      <td>국내 최초 개발 심전도기 계보를 잇는 12리드 ECG 진단 장비. PC 연동 분석 SW 포함.</td>
+      <td>병의원, 검진센터, 공공의료기관</td>
+    </tr>
+    <tr>
+      <td>FC 시리즈 (태아감시장치)</td>
+      <td>인체용 의료기기</td>
+      <td>분만·산전 태아 심박수(FHR) 및 자궁수축(TOCO) 감시 장치.</td>
+      <td>산부인과 병원, 분만전문 의료기관</td>
+    </tr>
+    <tr>
+      <td>무선 초음파 (Wireless Ultrasound)</td>
+      <td>인체용 의료기기</td>
+      <td>핸드헬드/태블릿 연동 무선 초음파 영상진단기. POC(Point-of-Care) 진료 환경 대응.</td>
+      <td>응급의학과, 1차 의료기관, 군·재난의료</td>
+    </tr>
+    <tr>
+      <td>Vet 시리즈 (BM3Vet/BM5Vet/BM7Vet, ECG Vet 등)</td>
+      <td>동물용 의료기기</td>
+      <td>동물병원용 환자감시장치·심전도기·마취감시기 등 수의용 라인업.</td>
+      <td>동물병원, 동물 종합의료센터, 수의대 부속병원</td>
+    </tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] Bionet 공식 홈페이지 제품정보(ebionet.com/kr/제품정보), 코머신 판매자 페이지, MEDICA 2024 보도자료(머니투데이 2024.11.01).</p>
+
+<h3>주요 기술</h3>
+<p class="desc">바이오넷의 핵심 기술은 26년간 축적된 생체신호 측정·처리 기술을 기반으로 구성된다. 다중 생체 파라미터(ECG·SpO₂·NIBP·EtCO₂ 등)를 실시간 측정·필터링하는 아날로그 프런트엔드(AFE)와, 부정맥·ST변화·QT 등을 자동 검출하는 알고리즘, 그리고 중앙환자감시 시스템·EMR·무선 송수신을 연계하는 통신 모듈이 결합되어 ICU·응급실·일반병동·산과·동물의료 전 영역의 모니터링 솔루션을 제공한다. 인공지능 기반 헬스케어 분석 솔루션으로의 확장이 회사가 공식적으로 밝힌 중기 방향성이며 [출처: 사람인 기업소개], 무선 초음파·홈케어 디바이스 등 디지털 헬스 영역으로 라인업을 넓히고 있다.</p>
+<pre>
+[ 기술 구조도 ]
+
+  ┌─────────────────────────────────────────┐
+  │      센서/입력 레이어                    │
+  │  ECG · SpO₂ · NIBP · EtCO₂ · IBP ·       │
+  │  Temp · Respiration · 초음파 프로브       │
+  └──────────────┬──────────────────────────┘
+                 │ 아날로그→디지털 변환
+  ┌──────────────▼──────────────────────────┐
+  │     생체신호 처리 엔진 (양산 TRL 9)      │
+  │  노이즈 제거·필터링·파라미터 산출        │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │     진단 알고리즘 (양산 TRL 8~9)         │
+  │  부정맥/ST/QT 검출, 태아 FHR/TOCO 분석   │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │   통신·시스템 연동 (양산 TRL 9)          │
+  │  무선/유선 → BM Central · EMR · HIS      │
+  └──────────────┬──────────────────────────┘
+                 │
+  ┌──────────────▼──────────────────────────┐
+  │   AI 헬스케어 분석 (개발 TRL 4~5, 추정)  │
+  │  데이터 기반 진단 보조·예측 분석         │
+  └─────────────────────────────────────────┘
+</pre>
+<table>
+  <colgroup>
+    <col style="width:22%">
+    <col>
+    <col style="width:12%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>기술명</th>
+      <th>내용</th>
+      <th class="center">기술 수준</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>다중 파라미터 생체신호 처리</td><td>ECG/SpO₂/NIBP/EtCO₂/IBP/Temp 동시 측정·필터링 (AFE 자체 설계)</td><td class="center">TRL 9 (양산)</td></tr>
+    <tr><td>진단 알고리즘 (Arrhythmia/ST/QT)</td><td>심전도 자동 판독, 태아 심박/자궁수축 분석</td><td class="center">TRL 8~9</td></tr>
+    <tr><td>중앙환자감시 시스템 (BM Central)</td><td>무선·유선 통합 다환자 동시 모니터링, EMR 연동</td><td class="center">TRL 9 (양산)</td></tr>
+    <tr><td>무선 초음파 영상화</td><td>핸드헬드 프로브·태블릿 연동, POC 진료 환경 대응</td><td class="center">TRL 8~9</td></tr>
+    <tr><td>AI 헬스케어 분석 솔루션</td><td>회사 공식 발표 중기 추진 방향, 상용화 단계 확인 필요</td><td class="center">TRL 4~5 (추정)</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] Bionet 제품정보·기술 자료, 사람인 기업소개(2026), MEDICA 2024 머니투데이 보도. TRL 수준은 양산 여부 기반 추정이며 정식 IR자료에서 확인 필요.</p>
+
+<h3>기술의 차별점</h3>
+<table>
+  <thead><tr><th>항목</th><th>바이오넷</th><th>일반 경쟁사</th></tr></thead>
+  <tbody>
+    <tr><td>제품 라인업 폭</td><td>인체용 + 동물용(Vet) 전 라인업 보유</td><td>인체용 또는 동물용 단일 라인업</td></tr>
+    <tr><td>업력·실적</td><td>1999년 설립, 26년 양산 트랙레코드, 85개국 수출</td><td>업력 짧고 글로벌 채널 제한적</td></tr>
+    <tr><td>국내 최초 타이틀</td><td>국내 최초 심전도기 개발 이력 [출처: 사람인 기업소개]</td><td>해당 없음</td></tr>
+    <tr><td>해외 누적 실적</td><td>미국 시장 누적 판매 8,000대 이상 [출처: 웹검색·코머신]</td><td>미상</td></tr>
+    <tr><td>제품 인증</td><td>FDA·CE·MFDS 등 다수 (구체 인증 리스트 확인 필요)</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h2>4. 시장 분석 및 경쟁사</h2>
+<h3>시장 규모</h3>
+<table>
+  <colgroup>
+    <col style="width:28%">
+    <col style="width:13%">
+    <col style="width:16%">
+    <col style="width:13%">
+    <col style="width:30%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th class="right">2024년</th>
+      <th class="right">전망</th>
+      <th class="center">연평균 성장률</th>
+      <th>출처</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>글로벌 환자감시장치(Patient Monitoring) 시장</td>
+      <td class="right nowrap">약 $6.0B</td>
+      <td class="right nowrap">$8.5B (2029E)</td>
+      <td class="center">약 7%</td>
+      <td>[MarketsandMarkets · Grand View Research, 2024 / 출처 확인 필요]</td>
+    </tr>
+    <tr>
+      <td>글로벌 ECG 장비 시장</td>
+      <td class="right nowrap">약 $7.0B</td>
+      <td class="right nowrap">$10B+ (2030E)</td>
+      <td class="center">약 6~7%</td>
+      <td>[Grand View Research, 2024 / 출처 확인 필요]</td>
+    </tr>
+    <tr>
+      <td>글로벌 동물용 의료기기(Veterinary Imaging·Monitoring)</td>
+      <td class="right nowrap">약 $2.5B</td>
+      <td class="right nowrap">$4B+ (2030E)</td>
+      <td class="center">약 8~9%</td>
+      <td>[Fortune Business Insights, 2024 / 출처 확인 필요]</td>
+    </tr>
+    <tr>
+      <td>국내 의료기기 시장 (생산 기준)</td>
+      <td class="right nowrap">약 12조 원</td>
+      <td class="right nowrap">15조 원+ (2027E)</td>
+      <td class="center">약 7%</td>
+      <td>[식약처 의료기기 생산실적 보고서, 2024]</td>
+    </tr>
+  </tbody>
+</table>
+<p class="source-note">[참고] 글로벌 시장 수치는 공개 리서치 추정치이며, 정식 본심사 단계에서 1차 자료(리포트 본문) 확인 필수.</p>
+
+<h3>경쟁사 분석</h3>
+<table>
+  <thead><tr><th>구분</th><th class="center">바이오넷</th><th class="center">멕트로닉/필립스/GE 등 글로벌</th><th class="center">메디아나·인포피아 등 국내</th></tr></thead>
+  <tbody>
+    <tr><td>주요 제품</td><td class="center">BM 시리즈, ECG, 태아감시, 무선초음파, Vet</td><td class="center">전 의료기기 라인</td><td class="center">환자감시·심전도 중심</td></tr>
+    <tr><td>해외 채널</td><td class="center">85개국</td><td class="center">글로벌 전역</td><td class="center">제한적</td></tr>
+    <tr><td>가격 포지셔닝</td><td class="center">중가형 (Mid-tier)</td><td class="center">프리미엄</td><td class="center">중가~보급형</td></tr>
+    <tr><td>차별점</td><td class="center">인체+동물용 듀얼 라인업</td><td class="center">기술·브랜드 파워</td><td class="center">국내 채널 강세</td></tr>
+    <tr><td>업력</td><td class="center">26년</td><td class="center">50~100년+</td><td class="center">20~30년</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] 각사 공시·홈페이지, 식약처 의료기기 정보포털. 정식 경쟁사 매핑은 IR자료 수령 후 갱신 필요.</p>
+
+<h3>경쟁 우위 요약</h3>
+<table>
+  <colgroup>
+    <col style="width:18%">
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>항목</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>핵심 차별점</td><td>26년 양산 트랙레코드 + 인체용·동물용 듀얼 라인업, 85개국 글로벌 채널, 국내 최초 심전도기 개발 이력</td></tr>
+    <tr><td>진입장벽</td><td>의료기기 인허가(FDA·CE·MFDS) 누적, 병원·동물병원 영업 채널, AFE/알고리즘 자체 설계 IP</td></tr>
+    <tr><td>리스크</td><td>글로벌 빅3(Philips·GE·Medtronic) 가격 압박, 국내 동종업체(메디아나 등) 가격 경쟁, AI 헬스케어 전환 속도 지연 가능성</td></tr>
+  </tbody>
+</table>
+
+<h2>5. 영업 현황</h2>
+<h3>주요 고객</h3>
+<table>
+  <colgroup>
+    <col style="width:28px">
+    <col style="width:22%">
+    <col style="width:12%">
+    <col style="width:12%">
+    <col>
+    <col style="width:12%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>고객사명</th>
+      <th>유형</th>
+      <th class="center">계약 상태</th>
+      <th>주요 계약 내용</th>
+      <th class="center">연간 규모</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="center">1</td><td>국내 종합병원·동물병원 (개별 명단 확인 필요)</td><td>B2B 의료기관</td><td class="center">양산 공급 중</td><td>BM 시리즈·ECG·태아감시·Vet 라인업 공급</td><td class="center">확인 필요</td></tr>
+    <tr><td class="center">2</td><td>해외 유통 파트너 (85개국)</td><td>B2B 디스트리뷰터</td><td class="center">양산 공급 중</td><td>OEM·자체 브랜드 수출 (미국 누적 8,000대+)</td><td class="center">확인 필요</td></tr>
+    <tr><td class="center">3</td><td>미국 시장 (Bionet US 법인 추정)</td><td>해외 자회사/파트너</td><td class="center">진행 중</td><td>BM Vet Elite 시리즈 등 동물의료 채널</td><td class="center">5년 누적 $20M+</td></tr>
+    <tr><td>—</td><td colspan="5">기타 정부조달·공공의료 및 검진센터 채널 확인 필요</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] Bionet 홈페이지 글로벌 네트워크, 코머신·Bionet US (bionetus.com), MEDICA 2024 보도자료. 매출처별 세부 비중은 IR자료 보강 필요.</p>
+
+<h3>수주 현황 및 계획</h3>
+<table>
+  <colgroup>
+    <col style="width:14%">
+    <col>
+    <col style="width:16%">
+    <col style="width:14%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>내용</th>
+      <th class="right">금액</th>
+      <th class="center">시기</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>수주 확정</td><td>2024년 매출 실현</td><td class="right nowrap">210.6억 원</td><td class="center nowrap">2024년</td></tr>
+    <tr><td>수주 확정</td><td>2025년 매출 실현 (사업보고서 제출 기준)</td><td class="right nowrap">약 226억 원 (잠정)</td><td class="center nowrap">2025년</td></tr>
+    <tr><td>수주 목표</td><td>AI 헬스케어·디지털 헬스 솔루션 신사업 매출</td><td class="right nowrap">확인 필요</td><td class="center nowrap">2026~2027</td></tr>
+    <tr><td>수주 목표</td><td>해외 신규 시장(중남미·중동·동남아) 확대</td><td class="right nowrap">확인 필요</td><td class="center nowrap">2026~</td></tr>
+  </tbody>
+</table>
+<div class="warn">⚠️ 검토 필요: 매출처별 비중, 단일 최대고객 의존도, 백오더(Order Backlog) 현황 IR자료 확보 필수.</div>
+
+<h2>6. 재무 현황 및 전망</h2>
+<h3>재무 현황 (실적)</h3>
+<table>
+  <thead><tr><th class="col-label">구분</th><th class="right">2023년</th><th class="right">2024년</th><th class="right">2025년 (잠정)</th></tr></thead>
+  <tbody>
+    <tr><td>매출액</td><td class="right nowrap">약 178억 원</td><td class="right nowrap">210.6억 원</td><td class="right nowrap">약 226억 원</td></tr>
+    <tr><td>영업이익</td><td class="right nowrap">확인 필요</td><td class="right nowrap">22.4억 원</td><td class="right nowrap">확인 필요</td></tr>
+    <tr><td>영업이익률</td><td class="right">—</td><td class="right">약 10.6%</td><td class="right">—</td></tr>
+    <tr><td>직원 수</td><td class="right">확인 필요</td><td class="right">확인 필요</td><td class="right">79명</td></tr>
+  </tbody>
+</table>
+<p class="source-note">[출처] 사람인 재무정보(2024 매출 210.6억·영업이익 22.4억), 캐치·NICE비즈인포 기업분석, DART 사업보고서(제27기) 표지. 2023년 매출은 2024년 18% 성장 역산 추정.</p>
+<div class="warn">⚠️ 검토 필요: DART 사업보고서 본문(재무제표·감사보고서)에서 매출원가·판관비·자산·부채·자본·현금흐름 표 확보 필수.</div>
+
+<h3>재무 전망 (계획)</h3>
+<table>
+  <thead><tr><th class="col-label">구분</th><th class="right">2026년 (E)</th><th class="right">2027년 (E)</th><th class="right">2028년 (E)</th></tr></thead>
+  <tbody>
+    <tr><td>매출액</td><td class="right">확인 필요</td><td class="right">확인 필요</td><td class="right">확인 필요</td></tr>
+    <tr><td>영업이익</td><td class="right">확인 필요</td><td class="right">확인 필요</td><td class="right">확인 필요</td></tr>
+    <tr><td>주요 가정</td><td colspan="3">AI 헬스케어 솔루션 출시, 해외 신시장 확대, 동물의료 라인업 강화 (IR자료 미수령으로 수치 미산정)</td></tr>
+  </tbody>
+</table>
+
+<h2>7. 투자 조건 및 밸류에이션</h2>
+<table class="overview-table">
+  <tbody>
+    <tr><td>투자 라운드</td><td>확인 필요 (Pre-IPO/Series 미정)</td></tr>
+    <tr><td>총 라운드 규모</td><td>확인 필요</td></tr>
+    <tr><td>K-Run Ventures 검토 금액</td><td>확인 필요</td></tr>
+    <tr><td>Pre-money Valuation</td><td>확인 필요</td></tr>
+    <tr><td>Post-money Valuation</td><td>확인 필요</td></tr>
+    <tr><td>투자 방식</td><td>확인 필요 (보통주/RCPS/CB 등)</td></tr>
+    <tr><td>예상 지분율</td><td>확인 필요</td></tr>
+    <tr><td>리드 투자사</td><td>확인 필요</td></tr>
+    <tr><td>IPO 계획</td><td>확인 필요 (비상장 074320 장외거래 종목)</td></tr>
+  </tbody>
+</table>
+
+<h3>밸류에이션 검토 (참고치)</h3>
+<table>
+  <thead><tr><th>방법론</th><th class="center">산출 Valuation</th><th>비고</th></tr></thead>
+  <tbody>
+    <tr><td>매출 배수 (2025E × 2x, 의료기기 보수)</td><td class="center nowrap">약 450억 원</td><td>전통 의료기기 Mid-tier 적용</td></tr>
+    <tr><td>매출 배수 (2025E × 4x, AI 헬스케어 성장)</td><td class="center nowrap">약 900억 원</td><td>디지털 헬스 피벗 가정 시</td></tr>
+    <tr><td>EV/EBIT (2024 × 15~20x)</td><td class="center nowrap">약 335~450억 원</td><td>2024년 영업이익 22.4억 기준</td></tr>
+    <tr><td><strong>요청 Valuation</strong></td><td class="center nowrap"><strong>확인 필요</strong></td><td><strong>IR자료 수령 후 비교 검토</strong></td></tr>
+  </tbody>
+</table>
+<p class="source-note">참고치는 공시 매출·영업이익을 기반으로 한 1차 추정. 본 심사 단계에서 동종업체(메디아나·인포피아·바이오노트 등) 거래배수 비교 필요.</p>
+
+<h3>자금사용계획</h3>
+<table>
+  <thead><tr><th>구분</th><th>사용 항목</th><th class="right">금액</th><th class="center">비중</th><th>비고</th></tr></thead>
+  <tbody>
+    <tr><td>—</td><td colspan="4">확인 필요 — IR Deck 미수령</td></tr>
+  </tbody>
+</table>
+
+<h2>8. 질의 확인 필요사항 (DD Checklist)</h2>
+<table>
+  <colgroup>
+    <col style="width:28px">
+    <col>
+    <col style="width:70px">
+    <col style="width:60px">
+    <col style="width:70px">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="col-num">#</th>
+      <th>확인 항목</th>
+      <th class="center">중요도</th>
+      <th>현황</th>
+      <th>담당</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="center">1</td><td>제27기 사업보고서 본문(재무제표·주주현황·임원현황) 전체 수령</td><td class="center"><span class="red">🔴 필수</span></td><td>표지만 수령</td><td>심사역</td></tr>
+    <tr><td class="center">2</td><td>IR Deck 정식 수령 (사업·기술·매출·계획)</td><td class="center"><span class="red">🔴 필수</span></td><td>미수령</td><td>심사역</td></tr>
+    <tr><td class="center">3</td><td>최근 3개년 감사보고서 (외부감사인 의견 포함)</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>회계 검토</td></tr>
+    <tr><td class="center">4</td><td>주주명부 및 주주간계약서 (특히 대주주·우호지분 구조)</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>법무 검토</td></tr>
+    <tr><td class="center">5</td><td>제품별·국가별 매출 비중, 단일 최대고객 의존도</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td class="center">6</td><td>FDA·CE·MFDS 등 인허가 보유 현황 및 갱신 일정</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>법무·기술 자문</td></tr>
+    <tr><td class="center">7</td><td>핵심 IP 현황 (특허·디자인·SW 저작권), 라이선스 분쟁 이력</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>법무 검토</td></tr>
+    <tr><td class="center">8</td><td>대표이사 민스티븐상원 상세 경력 및 지분 구조</td><td class="center"><span class="red">🔴 필수</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td class="center">9</td><td>AI 헬스케어 솔루션 개발 로드맵·인력·예산</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>기술 자문</td></tr>
+    <tr><td class="center">10</td><td>해외 자회사(Bionet US 등) 지분 구조·연결재무</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>회계·법무</td></tr>
+    <tr><td class="center">11</td><td>IPO/M&amp;A 등 엑싯 전략 및 일정</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td class="center">12</td><td>경쟁사(메디아나·인포피아·바이오노트 등) 대비 기술/가격 포지셔닝 비교 자료</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td class="center">13</td><td>임원·핵심인력 스톡옵션·유보이익·퇴직금 충당부채</td><td class="center"><span class="orange">🟡 중요</span></td><td>미확인</td><td>회계 검토</td></tr>
+    <tr><td class="center">14</td><td>정부 지원사업(R&amp;D 과제·세제 혜택) 수혜 현황 및 의무사항</td><td class="center"><span class="green">🟢 참고</span></td><td>미확인</td><td>심사역</td></tr>
+    <tr><td class="center">15</td><td>혁신의숲·NICE비즈인포 정량지표(고용·투자유치 등) 풀데이터 확보</td><td class="center"><span class="green">🟢 참고</span></td><td>미확인</td><td>심사역</td></tr>
+  </tbody>
+</table>
+
+<h2>9. 종합 의견</h2>
+<table>
+  <thead><tr><th class="col-label">항목</th><th class="center">평점</th><th>세부 의견</th></tr></thead>
+  <tbody>
+    <tr><td>팀 역량</td><td class="center nowrap">⭐⭐⭐ (잠정)</td><td>26년 업력의 안정적 경영, 다만 임원진·CTO/CFO 정보 확인 필요</td></tr>
+    <tr><td>시장 매력도</td><td class="center nowrap">⭐⭐⭐⭐</td><td>환자감시·ECG·동물의료 모두 안정적 성장 시장 (CAGR 6~9%)</td></tr>
+    <tr><td>기술 경쟁력</td><td class="center nowrap">⭐⭐⭐</td><td>양산 트랙레코드 우수, AI 헬스케어 전환 속도가 추가 가치 결정 변수</td></tr>
+    <tr><td>영업 현황</td><td class="center nowrap">⭐⭐⭐⭐</td><td>85개국 수출망·미국 누적 8,000대+ 실적, 매출 안정 성장 (2024 YoY +18%)</td></tr>
+    <tr><td>재무 계획</td><td class="center nowrap">⭐⭐⭐ (잠정)</td><td>매출 226억·영업이익률 10%대 안정적, 향후 계획은 IR 보강 필요</td></tr>
+    <tr><td>밸류에이션</td><td class="center nowrap">— (확인 필요)</td><td>요청 밸류에이션 미수령, 매출 배수·EBIT 배수 검토 가능 범위</td></tr>
+    <tr><td><strong>종합</strong></td><td class="center nowrap"><strong>⭐⭐⭐ (잠정)</strong></td><td><strong>조건부 본 심사 진행 권고</strong></td></tr>
+  </tbody>
+</table>
+
+<p class="desc" style="margin-top:10px;">
+바이오넷은 1999년 설립된 26년 업력의 의료기기 전문 기업으로, 환자감시장치(BM 시리즈)·심전도기·태아감시장치·무선초음파·동물용 의료기기까지 광범위한 라인업과 85개국 글로벌 채널을 보유한 안정적 캐시카우 사업체이다. 2024년 매출 210.6억(YoY +18%)·영업이익 22.4억(영업이익률 10.6%) 실현으로 흑자기조를 유지하고 있으며, AI 헬스케어 솔루션으로의 확장이 중기 가치 재평가 모멘텀이 될 수 있다.
+다만 첨부 자료가 사업보고서 표지 1매로 제한되어 주주·임원·IP·인허가·매출처 의존도·투자 조건 등 핵심 항목 다수가 미확인 상태이다. 본 심사 진행 권고하되, ① IR Deck 정식 수령, ② 제27기 사업보고서 본문(재무제표·주주현황) 확보, ③ 요청 밸류에이션 및 투자 조건 명확화가 선행되어야 한다. 또한 AI 헬스케어 전환 로드맵의 구체성, 해외 자회사 연결 구조, 글로벌 빅3 대비 가격·기술 포지셔닝 검증이 본 심사 단계의 핵심 검증 포인트가 될 것이다.
+</p>
+
+<footer>
+  <span>K-Run Ventures | 케이런7호 | 내부 검토용 기밀 문서</span>
+  <span>작성일: 2026.05.13</span>
+</footer>
+
+</body>
+</html>
